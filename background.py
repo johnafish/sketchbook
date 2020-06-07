@@ -20,7 +20,7 @@ class Background:
             for j in range(self.dimensions[1]):
                 v = int(pnoise2(i / freq, j / freq, self.octaves) * 127.0 + 128.0)
                 texture[i][j] = v 
-        print(texture)
+
         return Image.fromarray(texture).convert("RGB") 
         
 
